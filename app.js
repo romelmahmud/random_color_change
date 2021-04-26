@@ -17,6 +17,7 @@ const colorHex = ["A", "B", "C", "D", "E", "F", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const body = document.querySelector("body");
 const btn = document.querySelector(".btn");
 const hexText = document.querySelector(".color-hex");
+const headerSpan = document.querySelector(".container h1 span");
 
 // adding eventlistener
 
@@ -31,4 +32,5 @@ btn.addEventListener("click", function (e) {
   body.style.backgroundColor = colorHexCode;
   hexText.style.color = colorHexCode;
   hexText.textContent = colorHexCode;
+  headerSpan.style.color = colorHexCode;
 });
